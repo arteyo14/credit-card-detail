@@ -6,6 +6,11 @@ const StyledDiv = styled.div`
     top: 10rem;
     left: 15rem;
 
+    img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
+
     .sub-circle {
         position: absolute;
         top: 2.3rem;
@@ -47,7 +52,7 @@ const StyledDiv = styled.div`
     }
 `;
 
-const CardFront = () => {
+const CardFront = ({ ...props }) => {
     return (
         <StyledDiv>
             <img src={bg} alt="card-front" />
