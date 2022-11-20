@@ -1,7 +1,9 @@
+import NavSideComp from "./components/NavSide/NavSide"
+
 function App() {
   return (
-    <div className="App">
-      Hello React
+    <div>
+      <NavSideComp />
     </div>
   )
 }
