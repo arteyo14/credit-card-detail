@@ -2,9 +2,11 @@ import bg from '../../assets/bg-card-back.png';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
+    margin: 0;
     position: relative;
     top: 15rem;
     right: -20rem;
+    overflow: hidden;
     
     .img-back {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
