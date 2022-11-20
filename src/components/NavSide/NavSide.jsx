@@ -1,6 +1,7 @@
 import bg from '../../assets/bg-main-desktop.png';
 import styled from 'styled-components';
 import CardFront from '../CardFront/CardFront';
+import CardBack from '../CardBack/CardBack';
 
 const StyledDiv = styled.div`
     background-image: url(${bg});
@@ -13,6 +14,7 @@ const NavSideComp = () => {
     return (
         <StyledDiv>
             <CardFront/>
+            <CardBack/>
         </StyledDiv>
     )
 };
