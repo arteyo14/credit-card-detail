@@ -9,6 +9,7 @@ specifiers:
   react: ^18.2.0
   react-bootstrap: ^2.6.0
   react-dom: ^18.2.0
+  react-icon: ^1.0.0
   styled-components: ^5.3.6
   vite: ^3.2.3
 
@@ -18,6 +19,7 @@ dependencies:
   react: 18.2.0
   react-bootstrap: 2.6.0_2zx2umvpluuhvlq44va5bta2da
   react-dom: 18.2.0_react@18.2.0
+  react-icon: 1.0.0_react@18.2.0
   styled-components: 5.3.6_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
@@ -1711,6 +1713,15 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icon/1.0.0_react@18.2.0:
+    resolution: {integrity: sha512-VzSlpBHnLanVw79mOxyq98hWDi6DlxK9qPiZ1bAK6bLurMBCaxO/jjyYUrRx9+JGLc/NbnwOmyE/W5Qglbb2QA==}
+    peerDependencies:
+      babel-runtime: ^5.3.3
+      react: '>=0.12.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
