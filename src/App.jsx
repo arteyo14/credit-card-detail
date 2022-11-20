@@ -68,7 +68,6 @@ function App() {
       handleEventYear={handleEventYear}
       handleEventCvc={handleEventCvc}
       />
-      <button type='submit'>Confirm</button>
     </StyledDiv>
   )
 }
