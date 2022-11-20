@@ -16,17 +16,17 @@ const StyledDiv = styled.div`
     .cvv {
         position: absolute;
         top: 6.8rem;
-        right: 13rem;
+        right: 14.5rem;
         color: #fff;
         font-size: 1rem;
     }
 `;
 
-const CardBackComp = ({ ...props }) => {
+const CardBackComp = ({ cvc, ...props }) => {
     return (
         <StyledDiv>
             <img src={bg} alt="card-back" className='img-back' />
-            <p className='cvv'>000</p>
+            <p className='cvv'>{cvc}</p>
         </StyledDiv>
     )
 };

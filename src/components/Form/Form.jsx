@@ -10,12 +10,12 @@ const StyledForm = styled(Form)`
     }
 `;
 
-const FormComps = ({ handleEventCardNo, formatCardNo, ...props }) => {
+const FormComps = ({ handleEventMonth, handleEventName, handleEventCardNo, handleEventCvc, handleEventYear, formatCardNo, ...props }) => {
     return (
         <StyledForm className='m-auto text'>
             <Form.Group>
                 <Form.Label>CARDHOLDER NAME</Form.Label>
-                <Form.Control type='text' placeholder='e.g. Jane Appleseed' required/>
+                <Form.Control type='text' placeholder='e.g. Jane Appleseed' onChange={(e) => handleEventName(e)} required/>
             </Form.Group>
             <Form.Group className='mt-4'>
                 <Form.Label >CARD NUMBER</Form.Label>
@@ -24,13 +24,13 @@ const FormComps = ({ handleEventCardNo, formatCardNo, ...props }) => {
                 <Form.Group className='d-flex flex-column w-50'>
                     <Form.Label>EXP.DATE (MM/YY)</Form.Label>
                     <div className='d-flex w-100'>
-                        <Form.Control className='me-2' type='text' placeholder='MM' required />
-                        <Form.Control className='me-3' type='text' placeholder='YY' required />
+                        <Form.Control className='me-2' type='text' placeholder='MM' onChange={(e) => handleEventMonth(e)} maxLength={2} required/>
+                        <Form.Control className='me-3' type='text' placeholder='YY' onChange={(e) => handleEventYear(e)} maxLength={2} required />
                     </div>
                 </Form.Group>
                 <Form.Group className='w-50'>
                     <Form.Label>CVC</Form.Label>
-                    <Form.Control className='w-100' type='text' placeholder='e.g. 123' required />
+                    <Form.Control className='w-100' type='text' placeholder='e.g. 123' onChange={(e) => handleEventCvc(e)} maxLength={3} required />
                 </Form.Group>
             </Form>
             </Form.Group>
