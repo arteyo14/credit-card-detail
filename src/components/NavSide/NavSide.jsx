@@ -10,11 +10,11 @@ const StyledDiv = styled.div`
     height: 100vh;
 `;
 
-const NavSideComp = ({ format, ...props }) => {
+const NavSideComp = ({ month, cardNo, name, cvc, year, ...props }) => {
     return (
         <StyledDiv>
-            <CardFront format={format} {...props} />
-            <CardBack/>
+            <CardFront cardNo={cardNo} name={name} month={month} year={year} {...props} />
+            <CardBack cvc={cvc} />
         </StyledDiv>
     )
 };

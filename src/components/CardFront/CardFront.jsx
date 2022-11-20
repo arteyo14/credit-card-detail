@@ -52,16 +52,16 @@ const StyledDiv = styled.div`
     }
 `;
 
-const CardFront = ({ format, ...props }) => {
+const CardFront = ({ month, cardNo, name, year, ...props }) => {
     return (
         <StyledDiv>
             <img src={bg} alt="card-front" />
             <div className="circle"></div>
             <div className="sub-circle"></div>
-            <p className='card-number'>{format}</p>
+            <p className='card-number'>{cardNo}</p>
             <div className="name-expire">
-                <span>JANE APPLESEED</span>
-                <span>00/00</span>
+                <span>{name}</span>
+                <span>{month}/{year}</span>
             </div>
         </StyledDiv>
     );
