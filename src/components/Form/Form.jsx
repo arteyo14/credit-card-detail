@@ -3,7 +3,16 @@ import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const StyledForm = styled(Form)`
+    display: flex;
+    flex-direction: column;
     width: 40%;
+
+    .btn {
+        margin-top: 1rem;
+        background-color: #22092f;
+        border: none;
+        padding: 0.7rem;
+    }
 
     Form.Control:focus {
         outline: none
@@ -34,6 +43,7 @@ const FormComps = ({ handleEventMonth, handleEventName, handleEventCardNo, handl
                 </Form.Group>
             </Form>
             </Form.Group>
+            <button className='btn btn-primary' type="submit">Confirm</button>
         </StyledForm>
     )
 };
