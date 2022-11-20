@@ -52,13 +52,13 @@ const StyledDiv = styled.div`
     }
 `;
 
-const CardFront = ({ ...props }) => {
+const CardFront = ({ format, ...props }) => {
     return (
         <StyledDiv>
             <img src={bg} alt="card-front" />
             <div className="circle"></div>
             <div className="sub-circle"></div>
-            <p className='card-number'>0000 0000 0000 0000</p>
+            <p className='card-number'>{format}</p>
             <div className="name-expire">
                 <span>JANE APPLESEED</span>
                 <span>00/00</span>
